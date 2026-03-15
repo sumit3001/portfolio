@@ -1,21 +1,21 @@
 import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
-import { Line, Row, Text } from "@once-ui-system/core";
+import { Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  firstName: "Sumit",
+  lastName: "Vishwakarma",
+  name: `Sumit Vishwakarma`,
+  role: "Software Engineer",
+  avatar: "/images/avatar.jpeg",
+  email: "sumit30003@gmail.com",
+  location: "Asia/Kolkata",
+  languages: ["English", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  title: <>Let’s Work Together</>,
+  description: <>Have a project in mind or want to collaborate? Feel free to reach out.</>,
 };
 
 const social: Social = [
@@ -25,26 +25,20 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/sumit3001",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://in.linkedin.com/in/prosumit",
     essential: true,
   },
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
+    link: "https://www.instagram.com/sumit____.30",
     essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-    essential: true,
   },
   {
     name: "Email",
@@ -60,13 +54,13 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Turning ideas into scalable web and mobile applications</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
-        <Line background="brand-alpha-strong" vert height="20" />
+        {/* <strong className="ml-4">Once UI</strong>{" "}
+        <Line background="brand-alpha-strong" vert height="20" /> */}
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
@@ -76,8 +70,10 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
-</>
+      I'm {person.name}, a Full-Stack JavaScript Developer specializing in{" "}
+      <Text as="span" size="xl" weight="strong">React, React Native, and Node.js</Text>.
+      I build scalable web and mobile applications and enjoy creating performant, real-time products.
+    </>
   ),
 };
 
@@ -102,9 +98,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Software engineer focused on React, React Native, and Node.js, experienced in building performant web/mobile apps and real-time systems.
       </>
     ),
   },
@@ -113,9 +107,9 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Qualwebs",
+        timeframe: "August 2023 - Present",
+        role: "Software Engineer",
         achievements: [
           <>
             Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
@@ -128,18 +122,18 @@ const about: About = {
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-01.jpg",
+          //   alt: "Once UI Project",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "AveryBit Solutions",
+        timeframe: "May 2022 - August 2023",
+        role: "Software Engineer",
         achievements: [
           <>
             Developed a design system that unified the brand across multiple platforms, improving
@@ -159,12 +153,12 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Chameli Devi Group of Institutions",
+        description: <>Bachelor of Technology (B.Tech) in Information Technology.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "IATV Educational Academy",
+        description: <>Higher Secondary Education.</>,
       },
     ],
   },
@@ -173,7 +167,7 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "ReactJs",
         description: (
           <>Able to prototype in Figma with Once UI with unnatural speed.</>
         ),
@@ -184,20 +178,35 @@ const about: About = {
           },
         ],
         // optional: leave the array empty if you don't want to display images
-        images: [
+        images: [],
+      },
+      {
+        title: "React Native",
+        description: (
+          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+        ),
+        tags: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Figma",
+            icon: "figma",
           },
         ],
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "NodeJs",
+        description: (
+          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+        ),
+        tags: [
+          {
+            name: "Figma",
+            icon: "figma",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [],
       },
       {
         title: "Next.js",
@@ -219,14 +228,7 @@ const about: About = {
           },
         ],
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
     ],
   },
