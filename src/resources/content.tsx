@@ -54,7 +54,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Turning ideas into scalable web and mobile applications</>,
+  headline: <>Turning ideas into scalable Web and Mobile Applications</>,
   featured: {
     display: true,
     title: (
@@ -70,9 +70,9 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm {person.name}, a Full-Stack JavaScript Developer specializing in{" "}
-      <Text as="span" size="xl" weight="strong">React, React Native, and Node.js</Text>.
-      I build scalable web and mobile applications and enjoy creating performant, real-time products.
+      I'm {person.name}, A Full-Stack JavaScript Developer specializing in{" "}
+      <Text as="span" size="xl" weight="strong">React, React Native, NextJs and NodeJs</Text>.
+      I build scalable Web and Mobile Applications and enjoy creating performant, real-time products.
     </>
   ),
 };
@@ -98,7 +98,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Software engineer focused on React, React Native, and Node.js, experienced in building performant web/mobile apps and real-time systems.
+        Software engineer focused on React, React Native, NextJs and Node.js, experienced in building performant web/mobile apps and real-time systems.
       </>
     ),
   },
@@ -112,23 +112,19 @@ const about: About = {
         role: "Software Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Developed and maintained scalable web and mobile applications using <strong>React, React Native, and Node.js</strong>.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Built and integrated <strong>RESTful APIs</strong> and backend services, improving data flow and application performance.
+          </>,
+          <>
+            Implemented features such as real-time updates, form management, and optimized UI components to enhance <strong>user experience and responsiveness</strong>.
+          </>,
+          <>
+            Collaborated with designers and product teams to deliver new features, <strong>optimize performance</strong>, and maintain <strong>clean, maintainable code</strong>.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          // {
-          //   src: "/images/projects/project-01/cover-01.jpg",
-          //   alt: "Once UI Project",
-          //   width: 16,
-          //   height: 9,
-          // },
-        ],
+        images: [],
       },
       {
         company: "AveryBit Solutions",
@@ -136,12 +132,16 @@ const about: About = {
         role: "Software Engineer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Developed and maintained web applications using <strong>React and Node.js</strong>, focusing on scalable architecture and reusable components.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Built responsive UI components and integrated APIs to deliver <strong>dynamic and user-friendly interfaces</strong>.
+          </>,
+          <>
+            Worked closely with the development team to debug issues, improve performance, and ensure <strong>reliable application functionality</strong>.
+          </>,
+          <>
+            Contributed to feature development, code reviews, and version control workflows using <strong>Git and modern development practices</strong>.
           </>,
         ],
         images: [],
@@ -167,67 +167,72 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "ReactJs",
+        title: "Frontend",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Building responsive and performant web applications using React and Next.js.</>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [],
-      },
-      {
-        title: "React Native",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
-        tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [],
-      },
-      {
-        title: "NodeJs",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
-        tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
+            name: "React",
+            icon: "react",
           },
           {
             name: "Next.js",
             icon: "nextjs",
           },
+        ],
+        images: [],
+      },
+      {
+        title: "Backend",
+        description: (
+          <>Developing scalable server-side logic and robust APIs using Node.js.</>
+        ),
+        tags: [
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "Node.js",
+            icon: "nodejs",
           },
         ],
-        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "Mobile",
+        description: (
+          <>Creating cross-platform mobile applications for iOS and Android with React Native.</>
+        ),
+        tags: [
+          {
+            name: "React Native",
+            icon: "react",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "Desktop",
+        description: (
+          <>Building cross-platform desktop applications using Electron and web technologies.</>
+        ),
+        tags: [
+          {
+            name: "Electron",
+            icon: "electron",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "Database",
+        description: (
+          <>Managing and optimizing relational databases for data integrity and performance.</>
+        ),
+        tags: [
+          {
+            name: "PostgreSQL",
+            icon: "postgresql",
+          },
+        ],
         images: [],
       },
     ],
